@@ -7,7 +7,7 @@
           - flask-mysql 
     - name: deploy flask app 
       copy: 
-        src: ./app.py 
+        src: app.py 
         dest: /root/app.py 
     - name: start flask web server 
       shell: FLASK_APP=/root/app.py nohup flask run --host=0.0.0.0 &
